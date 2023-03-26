@@ -1,0 +1,46 @@
+﻿@page
+@model sample_app.Pages.Admin.Users.AddModel
+@{
+}
+
+
+
+<h1>Add User</h1>
+<form method="post">
+
+    <div class="mb-3">
+        <label for="firstname lastname">Name</label>
+        <input type="text" class="form-control" id="Name" asp-for="AdduserRequest.Name">
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="Email" asp-for="AdduserRequest.Email">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="AlphaNumericCharacter">Password</label>
+        <input type="password" class="form-control" id="Pass" asp-for="AdduserRequest.Password">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="Joining">Joining Date</label>
+        <input type="date" class="form-control" id="date" asp-for="AdduserRequest.JoiningDate">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="Visibility">Visible</label>
+        <input type ="checkbox" class="form-control" id="visible" asp-for="AdduserRequest.Visible">
+
+    </div>
+
+
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </div>
+
+</form>

@@ -1,0 +1,29 @@
+﻿@page
+@model sample_app.Pages.Admin.Users.ListModel
+@{
+}
+<h1>Data of all members</h1>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Joining Date</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Userdatas)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Name</td>
+                    <td>@item.Email</td>
+                    <td>@item.JoiningDate</td>
+                </tr>
+                 
+            }
+        </tbody>
+    </table>
+</div>
